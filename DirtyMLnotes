@@ -1,0 +1,72 @@
+17-10 - primera clase
+
+Quées ML
+ml vs IA
+
+*conocimiento del campo al cual se aplica el modelo. Condicionante del fallo
+
+RandomForest--> método de predicción eficiente (para empezar)
+xgboost --> modelo de competencias, el modelo predictivo +complejo pero +dificil de sacar andando
+
+"Más precisión o más simplicidad" -->regla n°1
+Crear variables nuevas es importante en el trabajo  del científico de datos
+Cuantos datos necesitas del pasado, y cuantos datos podes predecir del futuro?
+
+Upwork - RemoteOK.io--> tipo freelancer.com
+
+----------------------
+Deepfakes
+
+
+SAS Y SPSS -> software para crear modelos | licencias academicas
+
+
+cosas que necesitamos para "crear la mágia"
+Datos				[edad]
+Comportamientos		[visitas; acciones]
+Mapear esos datos 	[compró?]
+
+
+----------------------
+Clasificacióon
+
+Predicción de variables conmuchas clases [predictivo]
+Predicción de variable contínua [predictivo]
+Modelos de clustering [agrupar datos]
+
+----------------------
+Etapas [1+2+3 = 90%del tiempo]
+
+Análisis, relevamiento
+Exploración [outlayer y nulos]
+
+Preparación de los datos [creer nuevas variables, limpiar los datos imposibles para el negocio]
+Construcción del modelo
+VALIDACIÓN Y REVISIÓN--> kill'em
+
+----------------------
+AI VS ML --> "la diferencia es las preguntas que responden"
+
+ML: CREA modelos predictivos
+
+
+ML (Data Science): Cual es la probabilidad que suceda un evento x en el futuro [gradient boosting machines, random forest, SVM]
+
+AI (deep learning): Procesamiento de imagenes y videos, generar secuencias nuevas en base a viejas, traducción de textos, entendimiento de voz- genera nueva información [Convultional networks, LSTM (Long Short Term memory), NLP]
+
+DPLYR --> libreríacopada para hacer ETL []
+
+________________________________________________________________________
+
+#Tipos de dato
+integer
+numeric
+character
+factor --> R lo maneja como un código [string character] --> revisar esta mierda. es una variable caracter que tiene asociado un código (siempre usar character)
+
+#Vectores
+El vector tiene un solo tipo de datos, por EJ, sí hayun vector que tiene solo número, son todos números. Sí le agrego un " HoLA " pasan a ser todos characters.
+
+## Creando un data frame / tibble
+Dataframe 
+tibble
