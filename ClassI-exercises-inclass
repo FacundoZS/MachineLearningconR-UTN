@@ -1,0 +1,31 @@
+# Instalación de paquetes
+install.packages("tidyverse")
+
+# Carga y/o instalación de paquetes
+library("tidyverse")
+
+## Carga de datos
+[variable]=read_delim(file = [archivo], [delimitador])
+d_wine=read_delim(file = "data/winequality-white.csv", delim = ";")
+
+## Analisis inicial
+##########################################
+## Impresion de los datos
+d_wine
+
+## Revision de cantidad de filas/columnas 
+# Cantidad de registros
+nrow(d_wine)
+# Cantidad de columnas
+ncol(d_wine)
+# Nombre de columnas
+colnames(d_wine)
+
+#Visualización
+glimpse(d_wine)
+head(d_wine)
+
+
+# Otras maneras de acceder a un valor: operador $
+d_wine$pH --> visualización de columnas listadas a lo ancho
+
