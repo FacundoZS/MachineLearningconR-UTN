@@ -29,3 +29,36 @@ head(d_wine)
 # Otras maneras de acceder a un valor: operador $
 d_wine$pH --> visualización de columnas listadas a lo ancho
 
+____________________________________________________________
+
+Respuestas a los ejercicios
+##########################################
+## Ejercicios!
+##########################################
+# Nota: Verificar tener las librerías cargadas y el directorio de trabajo
+
+
+## 1 - Cargar el set de datos "data/HollywoodMovies.csv" (ojo con el separador!). 
+d_movie=read_delim(file = "HollywoodMovies.csv", delim = ",")
+
+## 2 - ¿Cuántos registros y columnas tiene?
+
+
+nrow(d_movie)
+ncol(d_movie)
+colnames(d_movie)
+
+#Respuesta
+#> nrow(d_movie)
+#[1] 970
+#> ncol(d_movie)
+#[1] 16
+
+glimpse(d_movie)
+head(d_wine)
+
+## 3 - Imprimir una variable Budget, y luego el registro número 10
+
+d_movie$Budget[10]
+ggplot(data = d_movie, aes(x = Budget)) + geom_bar()
+
