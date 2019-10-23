@@ -1,0 +1,31 @@
+CLASE II
+
+OPERADORES BOOLEANOS
+
+! es NOT
+& es AND
+| es OR
+
+!(T | F)
+
+
+#Análisis exploratorio de datos
+interpretación de datos
+tareas comunos
+Percentiles
+EJ: EPH categorica y numérica
+
+Entender las variables o los grupos de datos
+-> conocer validar y modificar(Funcion status)
+
+LIBRO: "Como mentir con estadísticas"
+
+Correlaciones: Variables de entrada entre si, variables de entrada y de salida (Hay funciones en R para medir la correlación)
+
+las primeras variables del desition tree son las que más separan los casos (todo es para minimizar la entropía -> information gain)
+
+Percentiles
+Menos cesgo en valores outliers
+
+
+###LEER BIEN LOS Percentiles PORQUE SON UNA PIJA Y sirven para describir semanticamente a la poblaación###
