@@ -1,0 +1,146 @@
+# Curso Ciencia de Datos UTN 2019
+
+
+##########################################
+## Lab 3 - AnÃ¡lisis Exploratorio de Datos
+##########################################
+
+install.library(hmisc)
+## Carga y/o instalacion de paquetes
+library(tidyverse)
+library(funModeling)
+library(Hmisc)
+
+
+##########################################
+## Carga de datos
+##########################################
+## Ya vienen con el paquete funModeling: heart_disease 
+data(heart_disease)
+heart_disease=heart_disease
+
+
+
+##########################################
+## AnÃ¡lisis exploratorio de datos
+##########################################
+
+## AnÃ¡lisis inicial de datos: df_status
+status(heart_disease)
+
+#Formula para pasar type de variables a factor -> internger
+heart_disease$gender=as.character(heart_disease$gender)
+heart_disease$gender
+
+#na.omit es para sacar los NA de los registros del dataset
+heart_disease_2=na.omit(heart_disease)
+status(heart_disease_2)
+nrow(heart_disease)
+nrow(heart_disease_2)
+
+## GrÃ¡ficos de distribuciÃ³n (variable numÃ©rica): plot_num
+
+plot_num(heart_disease)
+plot_num(heart_disease, bins = 5)
+plot_num(heart_disease, bins = 15)
+#Bins es la cantidad de "barritas" del grafo
+
+## DescripciÃ³n cuantitativa (nÃºmeros...): summary, describe, profiling_num
+
+summary(heart_disease)
+#resumen de toda la info del dataset
+
+describre(heart_disease)
+describre(heart_disease$age)
+#instalar y usar--> es la que usa Pablo Casas
+
+profiling_num(heart_disease)
+profiling_num(heart_disease$age)
+
+freq(heart_disease)
+freq_thal=freq(heart_disease$thal)
+
+v_flag=freq_thal$frequency<20
+# freq_thal[fila,col]
+
+freq_thal[v_flag, "var"]
+
+## GrÃ¡ficos de distribuciÃ³n (variable categorica): freq
+
+
+
+
+
+
+
+
+
+
+###########################################
+## Lectura complementaria
+###########################################
+
+# IntroducciÃ³n al anÃ¡lisis numÃ©rico: https://librovivodecienciadedatos.ai/analisis-exploratorio-de-datos.html#analisis_numerico
+# AnÃ¡lisis de variables numÃ©ricas: https://librovivodecienciadedatos.ai/analisis-exploratorio-de-datos.html#analisis-de-variables-numericas
+# AnÃ¡lisis de variables categÃ³ricas: https://librovivodecienciadedatos.ai/analisis-exploratorio-de-datos.html#analisis-variables-categoricas
+# Â¿QuÃ© son los percentiles?: https://librovivodecienciadedatos.ai/apendice.html#apendice-percentiles
+# Valores outliers: https://librovivodecienciadedatos.ai/preparacion-de-datos.html#tratamiento_valores_atipicos
+
+
+
+
+
+
+
+##########################################
+## Ejercicios!
+##########################################
+# Nota: Verificar tener las librerÃ­as cargadas y el directorio de trabajo
+
+
+## 1 - Cargar el set de datos "data/bank.csv".
+## Los datos historicos reprentan si los clientes hicieron o no un deposito. 
+## Indicado en la variable "deposit" (variable a predecir).
+
+## 2 - Hacer una descripcion visual y numÃ©rica de las variables numericas (`plot_num`). 
+
+# a) Â¿Se observa algo raro?, Â¿QuÃ© variables parecen tener valores extremos o outliers?
+
+
+
+# b) Â¿Hay nulos (NA)?
+
+
+  
+# c) Â¿Todas las variables estÃ¡n en los rangos correctos?
+
+
+
+
+## 3 - Hacer una descripcion visual variables categoricas (funciÃ³n `freq`)
+## Â¿Se observa algo raro (como una mala carga de datos)? (ayuda: ver variable a predecir) 
+
+
+## 4 - Â¿CuÃ¡l es el rango de 'age' en donde se concentran el 80% de los datos?
+
+
+
+## 5 - Remover los valores extremos de la variable age 
+## asignandole el percentil 98 a todo lo que le supere. 
+
+# 5a - Calcular percentil 98
+
+
+
+# 5b - Obtener el vector flag (TRUE/FALSE) de todo lo que lo supere
+
+
+
+# 5c - Asignar el valor de 5a), y verificar la distribuciÃ³n de nuevo
+
+
+
+
+
+
+
